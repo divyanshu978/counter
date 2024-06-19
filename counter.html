@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<style>
+    .counter{
+        text-align: center;
+       
+    }
+</style>
+<body>
+   <div class="counter">
+    <h1>COUNTER</h1>
+    <span id="num"><h2>0</h2></span>
+    <button id="decrease">decrease</button>
+    <button id="reset">reset</button>
+    <button id="increase">increase</button>
+   </div> 
+
+   <script>
+    let count =0;
+    const inc = document.querySelector('#increase')
+    const res = document.querySelector('#reset')
+    const dec = document.querySelector('#decrease')
+    const num = document.querySelector('#num')
+inc.addEventListener('click',function(e){
+    count++;
+})
+    </script>
+</body>
+</html>
